@@ -28,7 +28,6 @@ jobs:
         node-version: [12.x, 14.x]
     steps:
       - uses: actions/checkout@v2
-      - needs: build
       - uses: actions/download-artifact@master
         with: 
           name: webpack artifacts
